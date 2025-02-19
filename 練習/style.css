@@ -33,7 +33,7 @@
 @media (max-width:500px) {
     .header p{
         position: relative;
-        left: 200px;
+        left: 50px;
     }
 }
 .header p{
@@ -44,21 +44,35 @@
     margin: 0px 5px 0px 5px;
 }
 
-
-@media (max-width:1300px) {
-    .user{
-        visibility: hidden;
-    }
-}
 .user{
+    display: inline-block;
     position: absolute;
-    right: 1%;
+    right: 10px;
 }
 .user button:hover{
     background-color: #850000;
     border-radius: 5px;
+    box-shadow: #000000 0px 2px 3px;
 }
-
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+#login{
+    position: relative;
+    right: 50px;
+    font-size: 20px;
+    margin-top:30px;
+    padding: 10px;
+    border-radius: 10px;
+    visibility: hidden;
+    background-color: #b30000;
+    animation: float 2s infinite ease-in-out;
+}
+#login a{
+    font-size: 15px;
+}
 
 button{
     font-size: 30px;
@@ -107,13 +121,24 @@ button{
 img{
     max-width: 100%;
 }
+@media (max-width:500px) {
+    .footer{
+        max-width: 500px;
+    }
+}
 .footer{
     background-color: #b30000;
     display: flex;
 }
+@media (max-width:500px) {
+    .brand{
+        font-size: 10px;
+        display: block;
+    }
+}
 .brand{
     color: #fff;
-    display: block;
+    display: inline;
     margin: 0px 50px;
 }
 .brand a{
@@ -123,8 +148,7 @@ img{
 .contact{
     color: #fff;
     display: block;
-    margin: 0px 50px;
 }
 .contact img{
-    width: 50px;
+    width: 30px;
 }
