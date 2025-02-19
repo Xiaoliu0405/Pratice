@@ -83,7 +83,7 @@ button{
 }
 @media (max-width:1300px) {
     .dropdown{
-        visibility: hidden;
+        display: none;
     }
 }
 .dropdown {
@@ -121,33 +121,76 @@ button{
 img{
     max-width: 100%;
 }
-@media (max-width:500px) {
-    .footer{
-        max-width: 500px;
-    }
-}
+
 .footer{
     background-color: #b30000;
     display: flex;
 }
 @media (max-width:500px) {
-    .brand{
-        font-size: 10px;
-        display: block;
+    #brand{
+        display: inline-block;
+        font-size: 15px;
     }
 }
-.brand{
+#brand{
     color: #fff;
     display: inline;
-    margin: 0px 50px;
+    padding: 0px 20px;
 }
-.brand a{
+#brand a{
     color: #fff;
     text-decoration: none;
 }
-.contact{
+@media (max-width:500px) {
+    #back{
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+#back{
     color: #fff;
-    display: block;
+    display: inline;
+    padding: 0px 20px;
+}
+#back a{
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:500px) {
+    #menber{
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+#menber{
+    color: #fff;
+    display: inline;
+    padding: 0px 20px;
+}
+#menber a{
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:500px) {
+    #contact{
+        display: inline-block;
+        font-size: 15px;
+    }
+}
+#contact a{
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width:500px) {
+    .contact{
+        display: block;
+        font-size: 15px;
+        padding: 0px 20px;
+    }
+}
+.contact{
+    color: #ffffff;
+    padding-left: 50px;
 }
 .contact img{
     width: 30px;
